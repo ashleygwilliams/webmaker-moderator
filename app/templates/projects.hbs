@@ -1,0 +1,27 @@
+<h2 class="pull-left">Projects</h2>
+<div class="container">
+  <table class="table table-striped table-hover">
+    <thead>
+      <tr>
+        <th>id</th>
+        <th>user_id</th>
+        <th>remixed_from</th>
+        <th>version</th>
+        <th>title</th>
+        <th>featured</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each model as |project|}}
+        <tr>
+          <td>{{project.id}}</td>
+          <td>{{project.user_id}}</td>
+          <td>{{project.remixed_from}}</td>
+          <td>{{project.version}}</td>
+          <td>{{project.title}}</td>
+          <td>{{project.featured}}</td>
+        </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</div>
