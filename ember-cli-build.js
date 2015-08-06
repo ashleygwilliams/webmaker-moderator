@@ -8,6 +8,7 @@ module.exports = function(defaults) {
 
   app.import(app.bowerDirectory + '/bootstrap/dist/js/bootstrap.min.js');
   app.import(app.bowerDirectory + '/bootstrap/dist/css/bootstrap.min.css');
+  app.import(app.bowerDirectory + '/makerstrap/dist/makerstrap.min.css');
 
   // Use `app.import` to add additional libraries to the generated
   // output files.
