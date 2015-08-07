@@ -14,7 +14,7 @@
     <tbody>
       {{#each model as |project|}}
         <tr>
-          <td>{{project.id}}</td>
+          <td><a href="/projects/{{project.id}}">{{project.id}}</a></td>
           <td>{{project.user_id}}</td>
           <td>{{project.remixed_from}}</td>
           <td>{{project.version}}</td>
