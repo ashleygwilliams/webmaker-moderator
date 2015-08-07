@@ -1,5 +1,5 @@
 import DS from 'ember-data';
 
 export default DS.RESTAdapter.extend({
-    host: 'http://localhost:2015'
+    host: 'https://api.webmaker.org'
 });
