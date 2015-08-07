@@ -14,7 +14,7 @@
       </thead>
       <tbody>
         {{#each model as |project|}}
-          <tr>
+          {{#link-to 'project' project tagName="tr"}}
             <td>{{project.id}}</td>
             <td>{{project.user_id}}</td>
             <td>{{project.remixed_from}}</td>
@@ -22,7 +22,7 @@
             <td>{{project.title}}</td>
             <td>{{ input type="checkbox" checked=project.featured }}</td>
             <td><button class="btn btn-danger">Delete</button></td>
-          </tr>
+          {{/link-to}}
         {{/each}}
       </tbody>
     </table>
