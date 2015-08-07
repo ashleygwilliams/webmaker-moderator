@@ -7,18 +7,16 @@
         <th>user_id</th>
         <th>remixed_from</th>
         <th>version</th>
-        <th>title</th>
         <th>featured</th>
       </tr>
     </thead>
     <tbody>
       {{#each model as |project|}}
         <tr>
-          <td><a href="/projects/{{project.id}}">{{project.id}}</a></td>
+          <td>{{#link-to 'project.edit' project}}{{project.title}}{{/link-to}}</td>
           <td>{{project.user_id}}</td>
           <td>{{project.remixed_from}}</td>
           <td>{{project.version}}</td>
-          <td>{{project.title}}</td>
           <td>{{project.featured}}</td>
         </tr>
       {{/each}}
