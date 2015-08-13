@@ -1,5 +1,6 @@
+import config from '../config/environment';
 import DS from 'ember-data';
 
 export default DS.RESTAdapter.extend({
-    host: 'http://localhost:2015'
+    host: config.APP.apiHostname
 });

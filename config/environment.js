@@ -16,6 +16,10 @@ module.exports = function(environment) {
     APP: {
       // Here you can pass flags/options to your application instance
       // when it is created
+      apiHostname: process.env.API_HOSTNAME ?
+        process.env.API_HOSTNAME : "http://localhost:2015",
+      loginLink: process.env.LOGIN_LINK ?
+        process.env.LOGIN_LINK : "http://localhost:1234/login/oauth/authorize?client_id=test&response_type=token&scopes=projects
     }
   };
 
