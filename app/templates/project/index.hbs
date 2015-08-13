@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="clearfix">
+    <h2 class="pull-left">
+      <small>#{{model.id}}</small>
+      {{model.title}}
+    </h2>
+    <div class="pull-right">
+      <button class="btn btn-danger" {{action 'delete'}}>
+        Delete
+      </button>
+      {{#link-to 'project.edit'}}
+        <button class="btn btn-warning">Edit</button>
+      {{/link-to}}
+    </div>
+  </div>
+  <div>
+    <dl>
+      <dt>Version:</dt>
+      <dd>{{model.version}}</dd>
+      <dt>Remixed From:</dt>
+      <dd>{{model.remixed.from}}</dd>
+      <dt>Featured?</dt>
+      <dd>{{model.featured}}</dd>
+    </dl>
+  </div>
+</div>
