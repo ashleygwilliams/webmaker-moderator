@@ -1,19 +1,45 @@
 <div class="container">
   <h2>Projects</h2>
+  <div class="form-group">
+    {{input class="form-control" type='text' value=filter placeholder='Search'}}
+  </div>
   <table class="table table-striped table-hover">
     <thead>
       <tr>
-        <th>#</th>
-        <th>Author</th>
-        <th>Remixed From</th>
-        <th>Version</th>
-        <th>Title</th>
-        <th>Featured?</th>
-        <th>Actions</th>
-    </tr>
+        {{sorting-key title='#'
+                      key='id'
+                      sortProperties = sortProperties
+                      sortAscending = sortAscending
+                      action='sort'}}
+        {{sorting-key title='username'
+                      key='author.username'
+                      sortProperties = sortProperties
+                      sortAscending = sortAscending
+                      action='sort'}}
+        {{sorting-key title='Remixed From'
+                      key='remixed_from'
+                      sortProperties = sortProperties
+                      sortAscending = sortAscending
+                      action='sort'}}
+        {{sorting-key title='Version'
+                      key='version'
+                      sortProperties = sortProperties
+                      sortAscending = sortAscending
+                      action='sort'}}
+        {{sorting-key title='Title'
+                      key='title'
+                      sortProperties = sortProperties
+                      sortAscending = sortAscending
+                      action='sort'}}
+          {{sorting-key title='Featured?'
+                      key='featured'
+                      sortProperties = sortProperties
+                      sortAscending = sortAscending
+                      action='sort'}}
+      </tr>
     </thead>
     <tbody>
-      {{#each model as |project|}}
+      {{#each filteredProjects as |project|}}
         <tr>
           <td>{{project.id}}</td>
           <td>{{project.author.username}}</td>
