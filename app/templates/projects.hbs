@@ -4,6 +4,7 @@
     <thead>
       <tr>
         <th>#</th>
+        <th>Author</th>
         <th>Remixed From</th>
         <th>Version</th>
         <th>Title</th>
@@ -15,6 +16,7 @@
       {{#each model as |project|}}
         <tr>
           <td>{{project.id}}</td>
+          <td>{{project.author.username}}</td>
           <td>{{project.remixed_from}}</td>
           <td>{{project.version}}</td>
           <td>{{project.title}}</td>
