@@ -14,6 +14,7 @@
     </div>
   </div>
   <div>
+    <h3>Project Details</h3>
     <dl>
       <dt>Version:</dt>
       <dd>{{model.version}}</dd>
@@ -22,5 +23,19 @@
       <dt>Featured?</dt>
       <dd>{{model.featured}}</dd>
     </dl>
+  </div>
+  <div>
+    <h3>Author Details</h3>
+    <dl>
+      <dt>ID:</dt>
+      <dd>{{model.author.id}}</dd>
+      <dt>Username:</dt>
+      <dd>{{model.author.username}}</dd>
+      <dt>Language:</dt>
+      <dd>{{model.author.locale.language}}</dd>
+    </dl>
+  </div>
+  <div>
+    {{model.thumbnail}}
   </div>
 </div>
