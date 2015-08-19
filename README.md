@@ -1,7 +1,8 @@
-# Webmaker-moderator
+# webmaker-moderator
+> a moderation tool for projects served by api.webmaker.org
 
 This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+Features Etherpad: https://etherpad.mozilla.org/fkSafueexi
 
 ## Prerequisites
 
