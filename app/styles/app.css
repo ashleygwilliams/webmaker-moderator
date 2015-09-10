@@ -3,3 +3,15 @@
   padding: 0px 25px 0px 10px;
   width: 150px;
 }
+
+th a:after {
+  content: " \25B4\25BE";
+}
+
+.asc a:after {
+  content: " \25B4";
+}
+
+.desc a:after {
+  content: " \25BE";
+}
